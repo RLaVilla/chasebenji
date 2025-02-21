@@ -10,6 +10,7 @@
   grid-template-columns: 0.2fr 1fr 0.2fr;
   place-items: center;
   padding: 10px;
+  background-color: black;
 }
 
 .header h1 {
@@ -41,7 +42,7 @@
 #content {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: 1fr 5fr;
   background-color: black;
 }
 
@@ -117,9 +118,41 @@ footer {
 
 footer div p {
   text-align: center;
-  padding: 50px 0 10px 0;
+  padding: 50px 10px 10px 10px;
   font-family: montserrat, sans-serif;
   font-size: 12px;
   font-weight: 600;
   color: rgb(73, 73, 73);
+}
+
+@media (width > 800px) {
+  .header h1 {
+    font-size: 26px;
+  }
+
+  .header img {
+    width: 50px;
+  }
+}
+
+@media (width < 350px) {
+  .header h1 {
+    font-size: 18px;
+  }
+
+  .signUp {
+    flex-direction: column;
+  }
+
+  fieldset p {
+    font-size: 12px;
+  }
+
+  fieldset h2 {
+    font-size: 36px;
+  }
+
+  footer div p {
+    font-size: 11px;
+  }
 }

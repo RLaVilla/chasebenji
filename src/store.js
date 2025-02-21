@@ -4,6 +4,8 @@ export function populateHome() {
   const content = document.getElementById("content");
   content.innerHTML = "";
 
+  const headerContainer = document.getElementById("headerContainer");
+
   const header = document.createElement("nav");
   header.classList.add("header");
 
@@ -21,5 +23,5 @@ export function populateHome() {
   header.appendChild(logo);
   header.appendChild(cart);
 
-  content.appendChild(header);
+  headerContainer.appendChild(header);
 }
