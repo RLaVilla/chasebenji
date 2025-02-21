@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 0.2fr 1fr 0.2fr;
+  place-items: center;
+  padding: 10px;
+}
+
+.header h1 {
+  grid-column: 2 / 3;
+  text-align: center;
+  font-family: montserrat, sans-serif;
+  letter-spacing: 4px;
+  font-size: 22px;
+  font-weight: bolder;
+  color: white;
+}
+
+#cart {
+  grid-column: 3 / 4;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  width: 44px;
+  place-self: end;
+  align-self: center;
+  display: grid;
+  place-items: center;
+}
+
+#cart img {
+  cursor: pointer;
+}
+
+#content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  background-color: black;
+}
+
+fieldset {
+  display: grid;
+  place-items: center;
+  outline: none;
+  border: none;
+}
+
+fieldset h2 {
+  font-size: 40px;
+  padding: 30px;
+  font-family: "Playfair Display", Georgia, serif;
+}
+
+fieldset p {
+  font-size: 14px;
+  font-family: montserrat, sans-serif;
+  font-weight: 620;
+  color: rgb(73, 73, 73);
+}
+
+label {
+  place-self: start;
+  visibility: hidden;
+}
+
+.signUp {
+  display: flex;
+  gap: 10px;
+  font-family: montserrat;
+  font-weight: 500;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.signUp input {
+  padding: 8px;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.signUp input:focus {
+  outline: none;
+  border-radius: 5px;
+  box-shadow: 0 0 3px black;
+}
+
+.signUp button {
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.signUp button:hover {
+  background-color: rgb(73, 73, 73);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer div p {
+  text-align: center;
+  padding: 50px 0 10px 0;
+  font-family: montserrat, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: rgb(73, 73, 73);
+}
